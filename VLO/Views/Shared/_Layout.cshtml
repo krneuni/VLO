@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Hotel Vista a las Olas</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <div class="cssmenu">
+        <ul>
+
+            <li class='active'>@Html.ActionLink("Vista a las Olas", "Index", "Home")</li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Productos", "Index", "Productos")</li>
+                    <li>@Html.ActionLink("Categoria de Productos", "Index", "Categorias")</li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compras<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Detalle de Compras", "Index", "DetalleCompras")</li>
+                    <li>@Html.ActionLink("Proveedores", "Index", "Proveedores")</li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empleados<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Empleados", "Index", "Empleados")</li>
+                    <li>@Html.ActionLink("Genero Empleado", "Index", "Generos")</li>
+                    <li>@Html.ActionLink("Turnos", "Index", "Turnos")</li>
+                    <li>@Html.ActionLink("Asignacion de Turnos", "Index", "AsignacionTurnos")</li>
+                    <li>@Html.ActionLink("Horas Extras", "Index", "HExtras")</li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuario<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Usuarios", "Index", "Usuarios")</li>
+                    <li>@Html.ActionLink("Tipo de usuario", "Index", "Roles")</li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pedido<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Menú", "Index", "Menus")</li>
+                    <li>@Html.ActionLink("Tipo de Menu", "Index", "TipoMenus")</li>
+                    <li>@Html.ActionLink("Receta", "Index", "Recetas")</li>
+                    <li>@Html.ActionLink("Mesas", "Index", "Mesas")</li>
+                    <li>@Html.ActionLink("Pedido", "Index", "Pedidos")</li>
+                    <li>@Html.ActionLink("Detalle Pedido", "Index", "DetallePedidos")</li>
+                </ul>
+            </li>
+            <li>@Html.ActionLink("Retiros por Empleados", "Index", "Prestamos")</li>
+            <li>@Html.ActionLink("Factura", "Index", "Facturas")</li>
+
+        </ul>
+
+
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Hotel Vista a las Olas</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

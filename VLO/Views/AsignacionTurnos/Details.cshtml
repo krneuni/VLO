@@ -1,0 +1,34 @@
+﻿@model VLO.Models.AsignacionTurno
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AsignacionTurno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Turnos.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Turnos.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAsignacion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

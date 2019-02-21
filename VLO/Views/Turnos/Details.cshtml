@@ -1,0 +1,42 @@
+﻿@model VLO.Models.Turnos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Turnos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraFinal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraFinal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTurno }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
